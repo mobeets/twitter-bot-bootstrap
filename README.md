@@ -5,6 +5,7 @@ REQUIREMENTS
    * [pip](https://pypi.python.org/pypi/pip)
    * cherrypy (```pip install cherrypy```)
    * Twython (```pip install Twython```)
+* easycron.com [account](http://www.easycron.com/)
 
 INSTRUCTIONS
 --------
