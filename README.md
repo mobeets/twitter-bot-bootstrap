@@ -22,21 +22,17 @@ Instructions
     * ```heroku create --stack cedar```
     * ```heroku apps:rename YOUR_APP_NAME```
 
-2. Update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
-    * Read about [twitter bot etiquette](http://tinysubversions.com/2013/03/basic-twitter-bot-etiquette/) for bot guidelines.
-    * Use the [wordnik api](https://github.com/wordnik/wordnik-python) for getting random parts of speech.
-
-3. Create a [new twitter account](https://twitter.com/).
+2. Create a [new twitter account](https://twitter.com/).
     * Use your current email to create the account by adding [a tag](http://en.wikipedia.org/wiki/Email_address#Address_tags).
        - Ex: _email@gmail.com_ => _email+twitterbot@gmail.com_
     * Confirm the email address associated with this new twitter account.
 
-4. Create a [new twitter app](https://dev.twitter.com/apps).
+3. Create a [new twitter app](https://dev.twitter.com/apps).
     * Under _Settings_ / _Application Type_:
         - Enable _"Read and Write"_
         - Check _"Allow this application to be used to Sign in with Twitter"_
 
-5. Create environment variables.
+4. Create environment variables.
     * In local repo, create a file called ```.env``` that contains your twitter app keys, one per line:
         - ```TWITTER_CONSUMER_KEY=replace_this```
         - ```TWITTER_CONSUMER_SECRET=replace_this```
@@ -47,6 +43,12 @@ Instructions
         - ```heroku config:push```
         - NOTE: to update heroku environment variables later, run ```heroku config:push --overwrite```
         - OR: add heroku environment variables manually using ```heroku config:set YOUR_ENV_VAR=replace_this```
+
+__Okay, now here's the fun part:__
+
+5. Update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
+    * Read about [twitter bot etiquette](http://tinysubversions.com/2013/03/basic-twitter-bot-etiquette/) for bot guidelines.
+    * Use the [wordnik api](https://github.com/wordnik/wordnik-python) for getting random parts of speech.
 
 6. Test your heroku app.
     * ```foreman start``` runs your heroku app locally.
