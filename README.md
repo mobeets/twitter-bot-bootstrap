@@ -5,9 +5,9 @@ Confused? Try reading [this](http://tinysubversions.com/2013/09/how-to-make-a-tw
 Requirements
 --------
 * __python__
-   * Install [Twython](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for posting tweets via python_
+   * Install [Twython](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for generating/posting tweets in python app_
 * __heroku__
-   * [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/): _for hosting web app_
+   * [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/): _for hosting python app and keeping it running_
 
 Instructions
 --------
