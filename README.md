@@ -3,7 +3,7 @@ The only programming necessary is to update the function ```get_message()``` in 
 
 Contact me [@jehosafet](https://twitter.com/jehosafet) if you have any problems getting this set up!
 
-REQUIREMENTS
+Requirements
 --------
 * __python__
    * [pip](https://pypi.python.org/pypi/pip): _for installing cherrypy and Twython_
@@ -14,7 +14,7 @@ REQUIREMENTS
 * __easycron.com__
    * [account](http://www.easycron.com/): _for periodically calling web app_
 
-INSTRUCTIONS
+Instructions
 --------
 0. Fork and pull this repo.
 
