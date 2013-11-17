@@ -1,24 +1,19 @@
-This is a template for creating your own twitter bot using python, heroku, and easycron.
-The only programming necessary is to update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
+This is a template for creating your own twitter bot using python and heroku. The only programming necessary is to update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
 
-Confused? Try reading [this](http://tinysubversions.com/2013/09/how-to-make-a-twitter-bot/). Or contact me [@jehosafet](https://twitter.com/jehosafet) if you have any problems getting this to work.
+Confused? Try reading [this](http://tinysubversions.com/2013/09/how-to-make-a-twitter-bot/). Or contact me [@jehosafet](https://twitter.com/jehosafet).
 
 Requirements
 --------
 * __python__
-   * [pip](https://pypi.python.org/pypi/pip): _for installing cherrypy and Twython_
-   * [Twython](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for posting tweets via python_
-   * [cherrypy](http://www.cherrypy.org/) (```pip install cherrypy```): _for running python code as web app_
+   * Install [Twython](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for posting tweets via python_
 * __heroku__
    * [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/): _for hosting web app_
-* __easycron.com__
-   * [account](http://www.easycron.com/): _for periodically calling web app_
 
 Instructions
 --------
 0. Fork and pull this repo.
 
-1. In local repo, create a new heroku app.
+1. In your local repo, create a new heroku app.
     * ```heroku create --stack cedar```
     * ```heroku apps:rename YOUR_APP_NAME```
 
@@ -31,9 +26,11 @@ Instructions
     * Under _Settings_ / _Application Type_:
         - Enable _"Read and Write"_
         - Check _"Allow this application to be used to Sign in with Twitter"_
+    * Under _Details_
+        - Click _"Create My Access Token"_
 
 4. Create environment variables.
-    * In local repo, create a file called ```.env``` that contains your twitter app keys, one per line:
+    * In your local repo, create a file called ```.env``` that contains your twitter app keys, one per line:
         - ```TWITTER_CONSUMER_KEY=replace_this```
         - ```TWITTER_CONSUMER_SECRET=replace_this```
         - ```TWITTER_OAUTH_TOKEN=replace_this```
@@ -50,14 +47,9 @@ __Okay, now here's the fun part:__
     * Read about [twitter bot etiquette](http://tinysubversions.com/2013/03/basic-twitter-bot-etiquette/) for bot guidelines.
     * Use the [wordnik api](https://github.com/wordnik/wordnik-python) for getting random parts of speech.
 
-6. Test your heroku app.
-    * ```foreman start``` runs your heroku app locally.
-    * Opening the url ```0.0.0.0:5000``` should now make your bot tweet.
+6. Test your bot locally.
+    * Running ```python model.py``` should generate your tweets once every minute, or at whatever rate you set in ```model.py```.
 
 7. Push local changes to heroku and github.
-    * ```git push heroku master``` pushes all commits to heroku.
-    * Opening the url ```YOUR_APP_NAME.herokuapp.com``` should now make your bot tweet.
-
-8. Automate your bot.
-   * Set up a cron job using [easycron](http://www.easycron.com/user) that calls ```YOUR_APP_NAME.herokuapp.com``` as often as you'd like your bot to tweet.
-    * NOTE: You will have to renew your account once a month to keep it free.
+    * ```git push heroku master``` pushes all commits to heroku and starts up your app.
+    * Your bot should now tweet as long as your heroku app is running (via the worker dyno).
