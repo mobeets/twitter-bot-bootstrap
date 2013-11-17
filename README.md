@@ -27,7 +27,7 @@ Instructions
     * Under _Settings_ / _Application Type_:
         - Enable _"Read and Write"_
         - Check _"Allow this application to be used to Sign in with Twitter"_
-    * Under _Details_
+    * Under _Details_:
         - Click _"Create My Access Token"_
 
 4. Create environment variables.
@@ -51,6 +51,6 @@ __Okay, now here's the fun part:__
 6. Test your bot locally.
     * Running ```python app.py``` should generate your tweets once every minute, or at whatever rate you set in ```app.py```.
 
-7. Push local changes to heroku and github.
+7. Commit and push local changes to heroku and github.
     * ```git push heroku master``` pushes all commits to heroku and starts up your app.
     * Your bot should now tweet as long as your heroku app is running (via the worker dyno).
