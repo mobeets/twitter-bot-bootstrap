@@ -1,4 +1,4 @@
-This is a template for creating your own twitter bot using python and heroku. The only programming necessary is to update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
+This is a template for creating your own twitter bot using python and heroku. The only programming necessary is to update the function ```get_message()``` in ```app.py``` to create your bot's tweets.
 
 Confused? Try reading [this](http://tinysubversions.com/2013/09/how-to-make-a-twitter-bot/). Or contact me [@jehosafet](https://twitter.com/jehosafet).
 
@@ -16,6 +16,7 @@ Instructions
 1. In your local repo, create a new heroku app.
     * ```heroku create --stack cedar```
     * ```heroku apps:rename YOUR_APP_NAME```
+    * Your heroku app will now keep the python script ```app.py``` running as often as possible.
 
 2. Create a [new twitter account](https://twitter.com/).
     * Use your current email to create the account by adding [a tag](http://en.wikipedia.org/wiki/Email_address#Address_tags).
@@ -43,12 +44,12 @@ Instructions
 
 __Okay, now here's the fun part:__
 
-5. Update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
+5. Update the function ```get_message()``` in ```app.py``` to create your bot's tweets.
     * Read about [twitter bot etiquette](http://tinysubversions.com/2013/03/basic-twitter-bot-etiquette/) for bot guidelines.
     * Use the [wordnik api](https://github.com/wordnik/wordnik-python) for getting random parts of speech.
 
 6. Test your bot locally.
-    * Running ```python model.py``` should generate your tweets once every minute, or at whatever rate you set in ```model.py```.
+    * Running ```python app.py``` should generate your tweets once every minute, or at whatever rate you set in ```app.py```.
 
 7. Push local changes to heroku and github.
     * ```git push heroku master``` pushes all commits to heroku and starts up your app.
