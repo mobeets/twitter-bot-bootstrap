@@ -1,0 +1,2 @@
+twython==3.0.0
+CherryPy==3.2.4
