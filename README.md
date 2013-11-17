@@ -33,12 +33,12 @@ INSTRUCTIONS
         - Check _"Allow this application to be used to Sign in with Twitter"_
 
 5. Create environment variables.
-    * in local repo: update ```.env``` with your twitter app keys
+    * In local repo, create a file called ```.env``` that contains your twitter app keys, one per line:
         - ```TWITTER_CONSUMER_KEY=replace_this```
         - ```TWITTER_CONSUMER_SECRET=replace_this```
         - ```TWITTER_OAUTH_TOKEN=replace_this```
         - ```TWITTER_OAUTH_TOKEN_SECRET=replace_this```
-    * on [heroku](https://devcenter.heroku.com/articles/config-vars): use ```heroku-config``` to copy contents of ```.env```
+    * For [heroku](https://devcenter.heroku.com/articles/config-vars), use ```heroku-config``` to copy contents of ```.env``` to your heroku app.
         - ```heroku plugins:install git://github.com/ddollar/heroku-config.git```
         - ```heroku config:push```
         - NOTE: to update heroku environment variables later, run ```heroku config:push --overwrite```
