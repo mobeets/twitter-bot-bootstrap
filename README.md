@@ -1,9 +1,14 @@
+This is a template for creating your own twitter bot using python, heroku, and easycron.
+The only programming necessary is to update the function ```get_message()``` in ```model.py``` to create your bot's tweets.
+
+Contact me [@jehosafet](https://twitter.com/jehosafet) if you have any problems getting this set up!
+
 REQUIREMENTS
 --------
 * __python__
-   * [__pip__](https://pypi.python.org/pypi/pip): _for installing cherrypy and Twython_
-   * [__Twython__](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for posting tweets via python_
-   * [__cherrypy__](http://www.cherrypy.org/) (```pip install cherrypy```): _for running python code as web app_
+   * [pip](https://pypi.python.org/pypi/pip): _for installing cherrypy and Twython_
+   * [Twython](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for posting tweets via python_
+   * [cherrypy](http://www.cherrypy.org/) (```pip install cherrypy```): _for running python code as web app_
 * __heroku__
    * [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/): _for hosting web app_
 * __easycron.com__
