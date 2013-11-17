@@ -17,16 +17,16 @@ def submit_tweet(message, handle=None):
     handle.update_status(status=message)
 
 def get_message(handle):
-    """
-    Your code here!
-    """
     message = ''
+    """
+    Your code goes here!
+    """
     assert len(message) <= TWEET_LENGTH
     return message
 
 def main():
     handle = user_handle()
-    message = get_message(handle) # create your own message here!
+    message = get_message(handle)
     print message
     submit_tweet(message, handle)
 
