@@ -1,5 +1,3 @@
-THIS_GIT_REPO_NAME
-
 REQUIREMENTS
 --------
 * heroku [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/)
