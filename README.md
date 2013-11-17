@@ -1,11 +1,13 @@
 REQUIREMENTS
 --------
-* heroku [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/)
-* python
-   * [pip](https://pypi.python.org/pypi/pip)
-   * cherrypy (```pip install cherrypy```)
-   * Twython (```pip install Twython```)
-* easycron.com [account](http://www.easycron.com/)
+* __python__
+   * [__pip__](https://pypi.python.org/pypi/pip): _for installing cherrypy and Twython_
+   * [__Twython__](https://github.com/ryanmcgrath/twython) (```pip install Twython```): _for posting tweets via python_
+   * [__cherrypy__](http://www.cherrypy.org/) (```pip install cherrypy```): _for running python code as web app_
+* __heroku__
+   * [account](https://www.heroku.com/) and [toolbelt](https://toolbelt.heroku.com/): _for hosting web app_
+* __easycron.com__
+   * [account](http://www.easycron.com/): _for periodically calling web app_
 
 INSTRUCTIONS
 --------
@@ -16,9 +18,9 @@ INSTRUCTIONS
     * ```heroku apps:rename YOUR_APP_NAME```
 
 2. Create a [new twitter account](https://twitter.com/).
-    * Instead of creating a new email account, add [a tag](http://en.wikipedia.org/wiki/Email_address#Address_tags) to an existing email account
+    * Use your current email to create the account by adding [a tag](http://en.wikipedia.org/wiki/Email_address#Address_tags).
        - Ex: _email@gmail.com_ => _email+twitterbot@gmail.com_
-    * Confirm the email address associated with your new twitter account.
+    * Confirm the email address associated with this new twitter account.
 
 4. Create a [new twitter app](https://dev.twitter.com/apps).
     * Under _Settings_ / _Application Type_:
