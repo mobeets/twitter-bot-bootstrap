@@ -49,7 +49,7 @@ __Okay, now here's the fun part:__
     * Use the [wordnik api](https://github.com/wordnik/wordnik-python) for getting random parts of speech.
 
 6. Test your bot locally.
-    * Running ```python app.py``` should generate your tweets once every minute, or at whatever rate you set in ```app.py```.
+    * Running ```foreman start``` should generate your tweets once every minute, or at whatever rate you set in ```app.py```.
 
 7. Commit and push local changes to heroku and github.
     * ```git push heroku master``` pushes all commits to heroku and starts up your app.
