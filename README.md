@@ -31,7 +31,7 @@ Instructions
         - Click _"Create My Access Token"_
     * Connect this app to your bot's twitter acount (help [here](http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/))
         - `$ gem install twurl`
-        - `$ twurl authorize --consumer-key "REPLACE_THIS" --consumer-secret "REPLACE_THIS"
+        - `$ twurl authorize --consumer-key "REPLACE_THIS" --consumer-secret "REPLACE_THIS"`
 
 4. Create environment variables.
     * In your local repo, create a file called ```.env``` that contains your twitter app keys, one per line:
