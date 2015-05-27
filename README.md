@@ -23,7 +23,7 @@ Instructions
        - Ex: _email@gmail.com_ => _email+twitterbot@gmail.com_
     * Confirm the email address associated with this new twitter account.
 
-3. From your main twitter account create a [new twitter app](https://dev.twitter.com/apps).
+3. From your main twitter account (not the one you just created, unless this is your first twitter account!) create a [new twitter app](https://dev.twitter.com/apps).
     * Under _Settings_ / _Application Type_:
         - Enable _"Read and Write"_
         - Check _"Allow this application to be used to Sign in with Twitter"_
@@ -32,9 +32,11 @@ Instructions
     * Connect this app to your bot's twitter acount (help [here](http://dghubble.com/blog/posts/twitter-app-write-access-and-bots/))
         - `$ gem install twurl`
         - `$ twurl authorize --consumer-key "REPLACE_THIS" --consumer-secret "REPLACE_THIS"`
+    * When `twurl` asks you to go to a url to log-in, now use the bot account you just created.
 
 4. Create environment variables.
-    * In your local repo, create a file called ```.env``` that contains your twitter app keys, one per line:
+    * `twurl` generated some keys for your new bot account. You can find these in `~/.twurlrc`.
+    * In your local repo, create a file called ```.env``` that contains these twitter app keys, one per line:
         - ```TWITTER_CONSUMER_KEY=replace_this```
         - ```TWITTER_CONSUMER_SECRET=replace_this```
         - ```TWITTER_OAUTH_TOKEN=replace_this```
