@@ -1,5 +1,7 @@
 This is a template for creating your own twitter bot using python and heroku. The only programming necessary is to update the function ```get_message()``` in ```app.py``` to create your bot's tweets.
 
+Also, if you'd like to randomly favorite other users' tweets by keyword search, uncoment the call to `random_favoriting()` in `main()`, and change the keywords to those you'd like to search for.
+
 Confused? Try reading [this](http://tinysubversions.com/2013/09/how-to-make-a-twitter-bot/). Or contact me [@jehosafet](https://twitter.com/jehosafet).
 
 Requirements
@@ -34,7 +36,7 @@ Instructions
         - `$ twurl authorize --consumer-key "REPLACE_THIS" --consumer-secret "REPLACE_THIS"`
     * When `twurl` asks you to go to a url to log-in, now use the bot account you just created.
 
-4. Create environment variables.
+4. Create an `.env` file containing your twitter keys.
     * `twurl` generated some keys for your new bot account. You can find these in `~/.twurlrc`.
     * In your local repo, create a file called ```.env``` that contains these twitter app keys, one per line:
         - ```TWITTER_CONSUMER_KEY=replace_this```
