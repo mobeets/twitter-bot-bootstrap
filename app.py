@@ -21,7 +21,7 @@ def twitter_handle():
 def favorite_tweet(tweet, handle):
     handle.create_favorite(id=tweet['id'])
 
-def random_favoriting(keywords, handle, favorite_probability=0.5):
+def random_favoriting(keywords, handle, favorite_probability=0.2):
     """
     keywords is a list, like ['bananas', 'apples', 'oranges']
 
