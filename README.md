@@ -44,7 +44,7 @@ Instructions
         - ```TWITTER_OAUTH_TOKEN=replace_this```
         - ```TWITTER_OAUTH_TOKEN_SECRET=replace_this```
     * For [heroku](https://devcenter.heroku.com/articles/config-vars), use ```heroku-config``` to copy contents of ```.env``` to your heroku app.
-        - Install heroku-config: ```heroku plugins:install git://github.com/ddollar/heroku-config.git```.
+        - Install heroku-config: ```heroku plugins:install heroku-config```.
         - Now run ```heroku config:push```.
             - NOTE: To update heroku environment variables later, run ```heroku config:push --overwrite```
             - Alternatively, add heroku environment variables manually using ```heroku config:set YOUR_ENV_VAR=replace_this```
